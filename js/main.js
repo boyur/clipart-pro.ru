@@ -273,13 +273,20 @@ $(document).ready(function () {
 
   /// Send form to mail - Ajax
   (function () {
+    emailjs.init("user_X65N3i08IAx6hjyeKxrwB");
     $("#form").submit(function (e) { //устанавливаем событие отправки для формы с id=form
       e.preventDefault();
-      var form_data = $(this).serialize(); //собераем все данные из формы
+      var formData = new FormData(this); //собераем все данные из формы
+      formData.append('service_id', 'yandex');
+      formData.append('template_id', 'template_c4Cx2bfz');
+      formData.append('user_id', 'user_X65N3i08IAx6hjyeKxrwB');
+
       $.ajax({
         type: "POST", //Метод отправки
-        url: "sendForm.php", //путь до php фаила отправителя
-        data: form_data,
+        url: "https://api.emailjs.com/api/v1.0/email/send-form", //путь до php фаила отправителя
+        data: formData,
+        contentType: false, // auto-detection
+        processData: false, // no need to parse formData to string
         success: function () {
           //код в этом блоке выполняется при успешной отправке сообщения
           alert("Ваше сообщение отпрвлено!");
