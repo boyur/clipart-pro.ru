@@ -1,0 +1,29 @@
+.timer {
+  background: cornflowerblue;
+}
+
+.timer__main {
+  @extend %clearfix;
+  padding: 3rem 0;
+  text-align: center;
+  color: white;
+}
+
+.timer__item {
+  float: left;
+  width: column-width(3);
+  padding: 0 1rem;
+
+  @include tablets() {
+    float: none;
+    width: 100%;
+  }
+}
+
+.count {
+  font-size: 4rem;
+}
+
+.count__title {
+  font-size: 1.5rem;
+}

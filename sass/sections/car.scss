@@ -1,0 +1,25 @@
+.car {
+  background: dodgerblue;
+}
+
+.car__main {
+  max-width: 700px;
+  margin: auto;
+  padding: 5rem 0;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px #333333;
+}
+
+.car__icon {
+  font-size: rem(80px);
+}
+
+.car__title {
+  font-size: rem(28px);
+  margin-bottom: rem(20px);
+}
+
+.car__text {
+  font-size: rem(18px);
+}

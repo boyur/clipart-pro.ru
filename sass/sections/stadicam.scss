@@ -1,0 +1,52 @@
+.stedicam {
+  height: 800px;
+  width: 100%;
+  background: url("../images/background/stadicam.jpg") no-repeat scroll 50%, rgba(0,0,0,0.25);
+  background-size: cover;
+  background-blend-mode: multiply;
+
+  .container {
+    height: 100%;
+  }
+}
+
+.stedicam__body {
+  float: right;
+  width: column-width(3);
+  height: 100%;
+
+  &:after {
+    display: inline-block;
+    height: 100%;
+
+    vertical-align: middle;
+    content: "";
+  }
+}
+
+.stedicam__main {
+  display: inline-block;
+  width: 95%;
+  vertical-align: middle;
+  color: white;
+}
+
+.stedicam__title {
+  display: inline-block;
+  text-align: left;
+  font-size: rem(34px);
+  letter-spacing: -1px;
+  line-height: rem(42px);
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+
+  &:before {
+    width: 20%;
+    left: 0;
+    background: white;
+  }
+}
+
+.stedicam__text {
+  display: inline-block;
+}

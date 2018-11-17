@@ -1,0 +1,36 @@
+.contacts{
+  padding: 80px 0;
+  background: #1e98e5;
+}
+
+.contacts__title {
+  color: white;
+
+  &:before {
+    background: white;
+  }
+}
+
+.contacts__content {
+  text-align: center;
+  color: white;
+}
+
+.contacts__column {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.contacts__icon {
+  font-size: 54px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.contacts__text {
+  font-size: 22px;
+}

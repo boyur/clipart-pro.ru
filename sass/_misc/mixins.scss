@@ -1,0 +1,62 @@
+%clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin inlineblock($valign: top) {
+	display: inline-block;
+	vertical-align: $valign;
+}
+
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+// Ширина колонки
+@function column-width ($col-span) {
+	@return 100% / $col-span
+}
+
+//responsive
+@function rem($px) {
+	@return $px / 16px + 0rem;
+}
+
+
+@mixin desktop {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+
+
+@mixin tablets {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin phones {
+	@media screen and (max-width: 560px) {
+		@content;
+	}
+}
+
+@mixin phones-mini {
+	@media screen and (max-width: 320px) {
+		@content;
+	}
+}

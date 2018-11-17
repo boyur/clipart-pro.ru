@@ -1,0 +1,26 @@
+// adjustment variables
+$container-width: 1170px;
+$footer-height: 50px;
+$body-font : 'fira_sansregular', Helvetica, serif;
+
+@import "_misc/normalize";
+@import "_misc/mixins";
+@import "_misc/adjustment";
+@import "_misc/media";
+@import "_misc/fonts";
+
+@import "plugins/font-awesome";
+@import "plugins/slider";
+
+@import "sections/promo";
+@import "sections/why-us";
+@import "sections/timer";
+@import "sections/team";
+@import "sections/fly-camera";
+@import "sections/car";
+@import "sections/stadicam";
+@import "sections/portfolio";
+@import "sections/reviews";
+@import "sections/order";
+@import "sections/contacts";
+@import "sections/footer";

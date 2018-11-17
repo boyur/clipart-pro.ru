@@ -1,0 +1,37 @@
+@media screen and (max-width: 1200px) { //hd
+	html {
+		font-size: 16px;
+	}
+
+	.container {
+		width: 970px;
+	}
+}
+
+@media screen and (max-width: 992px) { //laptop
+	html {
+		font-size: 14px;
+	}
+
+	.container {
+		width: auto;
+		margin: 0 18px;
+	}
+}
+
+@media screen and (max-width: 768px) { //tablets
+	html {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 560px) { //phones
+	html {
+		font-size: 16px;
+	}
+
+	.container {
+		width: auto;
+		margin: 0 8px 0 8px;
+	}
+}
