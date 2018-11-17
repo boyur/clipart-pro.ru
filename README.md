@@ -1,2 +1,2 @@
 # clipart-pro
-Clipmaker landing page. This site is for my friend .
+Clipmaker landing page. This site for my friend.
